@@ -1,5 +1,4 @@
 # invisible_cam
-# Invisible
 
 He creado un pequeño proyecto sobre la detección a través del uso de la cámara para ocultar a una persona del plano, sustituyéndola por el fondo que se ha capturado antes.
 
