@@ -81,6 +81,7 @@ cd /Users/leo/Downloads/invisible
 5. Cuando ya esté capturado el fondo, pulsa "Iniciar aplicación".
 6. Alza el puño para activar el efecto.
 7. Pulsa "q" para salir de la ventana de cámara.
+8. Se recomienda tener buena iluminación para una detección más precisa.
 
 ## Archivos importantes
 
