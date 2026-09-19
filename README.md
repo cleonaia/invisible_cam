@@ -1,2 +1,64 @@
 # invisible_cam
-He creado un proyecto sobre detectar a alguien haciendo señas con la mano o cerrándola donde causa el efecto de que desaparece mostrando así el fondo del encuadre de la cámara. 
+# Invisible
+
+He creado un pequeño proyecto sobre la detección a través del uso de la cámara para ocultar a una persona del plano, sustituyéndola por el fondo que se ha capturado antes.
+
+La idea es sencilla: primero guardas una imagen del fondo, luego cuando alzas el puño o cualquier seña, se detecta a la persona y la reemplaza con esa escena para que parezca que desaparece.
+
+## Qué necesitas
+
+- Python 3.10 o superior
+- Webcam
+- macOS, Windows o Linux
+
+Las dependencias están en [requirements.txt](requirements.txt).
+
+## Instalar dependencias
+
+Desde la carpeta del proyecto:
+
+```bash
+pip install -r requirements.txt
+```
+
+Si prefieres crear un entorno virtual antes:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Ejecutarlo
+
+En tu Mac, la forma correcta es esta:
+
+```bash
+cd /Users/leo/Downloads/invisible
+/opt/homebrew/Caskroom/miniconda/base/bin/python3 main.py
+```
+
+## Cómo usar la app
+
+1. Abre la aplicación.
+2. Asegúrate de que la escena esté limpia y sin nadie delante de la cámara.
+3. Pulsa "Capturar fondo".
+4. La app abrirá una vista previa en vivo con una cuenta atrás. Sal del encuadre antes de que termine.
+5. Cuando ya esté capturado el fondo, pulsa "Iniciar aplicación".
+6. Alza el puño para activar el efecto.
+7. Pulsa "q" para salir de la ventana de cámara.
+
+## Archivos importantes
+
+- [main.py](main.py): interfaz principal y flujo de la cámara.
+- [invisible.py](invisible.py): lógica del efecto invisible.
+- [utils.py](utils.py): detección de personas y estado de la mano.
+- [requirements.txt](requirements.txt): dependencias del proyecto.
+- [efficientdet_lite0.tflite](efficientdet_lite0.tflite): modelo de detección de personas.
+- [hand_landmarker.task](hand_landmarker.task): modelo de detección de manos.
+
+## Nota
+
+La app guarda la imagen de fondo en `invisible.jpg` dentro de la carpeta del proyecto.
+
+Si la cámara no responde, comprueba que no esté siendo usada por otra aplicación.
