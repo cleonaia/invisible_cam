@@ -37,7 +37,7 @@ cd /Users/leo/Downloads/invisible
 /opt/homebrew/Caskroom/miniconda/base/bin/python3 main.py
 ```
 
-## Cómo usar la app
+## Cómo usar el proyecto
 
 1. Abre la aplicación.
 2. Asegúrate de que la escena esté limpia y sin nadie delante de la cámara.
