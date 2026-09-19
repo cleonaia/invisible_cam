@@ -27,6 +27,23 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+## Instalación
+
+```bash
+git clone [https://github.com/cleonaia/invisible_cam.git](https://github.com/cleonaia/invisible_cam.git)
+cd invisible_cam
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+Después, abre:
+
+http://127.0.0.1:8000/
 
 ## Ejecutarlo
 
