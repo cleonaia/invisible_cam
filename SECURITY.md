@@ -1,21 +1,31 @@
-# Security Policy
+# Política de seguridad
 
-## Supported Versions
+## Versiones compatibles
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Actualmente, solo se mantiene la versión disponible en la rama `main`.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Versión | Compatible |
+| ------- | ---------- |
+| main    | Sí         |
 
-## Reporting a Vulnerability
+## Reportar una vulnerabilidad
 
-Use this section to tell people how to report a vulnerability.
+Si detectas una vulnerabilidad de seguridad en **Cámara_invisible**, por favor:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. No publiques los detalles en una issue, pull request o discusión pública.
+2. Abre una issue pública únicamente indicando que necesitas comunicar un problema de seguridad, sin incluir detalles técnicos sensibles.
+3. El mantenedor se pondrá en contacto contigo para continuar la conversación de forma privada.
+
+Incluye, si es posible:
+
+- Una descripción clara del problema.
+- Pasos para reproducirlo.
+- La versión o el commit afectado.
+- El impacto que podría tener.
+- Una posible solución o recomendación, si la conoces.
+
+Haré lo posible por responder en un plazo de 7 días.
+
+## Alcance
+
+Esta política cubre el código del repositorio `invisible_cam`
