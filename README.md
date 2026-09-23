@@ -97,3 +97,11 @@ cd /Users/leo/Downloads/invisible
 La app guarda la imagen de fondo en `invisible.jpg` dentro de la carpeta del proyecto.
 
 Si la cámara no responde, comprueba que no esté siendo usada por otra aplicación.
+
+## ⭐ Apoya el proyecto
+
+Si este proyecto te ha resultado útil, te ha servido para aprender o te ha gustado, dale una estrella ⭐ a este repositorio en GitHub.
+
+Tu estrella ayuda a que el proyecto llegue a más personas y me motiva a seguir mejorándolo!!
+
+¡Gracias por el apoyo! 🙌
