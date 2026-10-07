@@ -1,36 +1,37 @@
 # invisible_cam
 
-He creado un pequeño proyecto sobre la detección a través del uso de la cámara para ocultar a una persona del plano, sustituyéndola por el fondo que se ha capturado antes.
+I have created a small project that uses the camera to detect and hide a person from the frame, replacing them with the background captured beforehand.
 
-La idea es sencilla: primero guardas una imagen del fondo, luego cuando alzas el puño o cualquier seña, se detecta a la persona y la reemplaza con esa escena para que parezca que desaparece.
+The idea is simple: first, you save an image of the background. Then, when you raise your fist or make another gesture, the person is detected and replaced with that scene, making it look as if they have disappeared.
 
-## Qué necesitas
+## Requirements
 
-- Python 3.10 o superior
-- Webcam
-- macOS, Windows o Linux
+- Python 3.10 or higher.
+- A webcam.
+- macOS, Windows, or Linux.
 
-Las dependencias están en [requirements.txt](requirements.txt).
+The dependencies are listed in [`requirements.txt`](https://github.com/cleonaia/invisible_cam/blob/main/requirements.txt).
 
-## Instalar dependencias
+## Installing the dependencies
 
-Desde la carpeta del proyecto:
+From the project directory:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Si prefieres crear un entorno virtual antes:
+If you prefer to create a virtual environment first:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-## Instalación
+
+## Installation
 
 ```bash
-git clone [https://github.com/cleonaia/invisible_cam.git](https://github.com/cleonaia/invisible_cam.git)
+git clone https://github.com/cleonaia/invisible_cam.git
 cd invisible_cam
 
 python3 -m venv venv
@@ -41,67 +42,50 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Después, abre:
+Then open:
 
-http://127.0.0.1:8000/
+[http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-## Instalación
+## Running the project
 
-```bash
-git clone [https://github.com/cleonaia/invisible_cam.git](https://github.com/cleonaia/invisible_cam.git)
-cd invisible_cam
-
-python3 -m venv venv
-source venv/bin/activate
-
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-```
-
-Después, abre:
-
-http://127.0.0.1:8000/
-
-## Ejecutarlo
-
-En tu Mac, la forma correcta es esta:
+On your Mac, the correct way to run it is:
 
 ```bash
 cd /Users/leo/Downloads/invisible
 /opt/homebrew/Caskroom/miniconda/base/bin/python3 main.py
 ```
 
-## Cómo usar el proyecto
+## How to use the project
 
-1. Abre la aplicación.
-2. Asegúrate de que la escena esté limpia y sin nadie delante de la cámara.
-3. Pulsa "Capturar fondo".
-4. La app abrirá una vista previa en vivo con una cuenta atrás. Sal del encuadre antes de que termine.
-5. Cuando ya esté capturado el fondo, pulsa "Iniciar aplicación".
-6. Alza el puño para activar el efecto.
-7. Pulsa "q" para salir de la ventana de cámara.
-8. Se recomienda tener buena iluminación para una detección más precisa.
+1. Open the application.
+2. Make sure the scene is clear and that nobody is in front of the camera.
+3. Click **“Capture Background”**.
+4. The app will open a live preview with a countdown. Move out of the frame before the countdown ends.
+5. Once the background has been captured, click **“Start Application”**.
+6. Raise your fist to activate the effect.
+7. Press **“q”** to close the camera window.
 
-## Archivos importantes
+Good lighting is recommended for more accurate detection.
 
-- [main.py](main.py): interfaz principal y flujo de la cámara.
-- [invisible.py](invisible.py): lógica del efecto invisible.
-- [utils.py](utils.py): detección de personas y estado de la mano.
-- [requirements.txt](requirements.txt): dependencias del proyecto.
-- [efficientdet_lite0.tflite](efficientdet_lite0.tflite): modelo de detección de personas.
-- [hand_landmarker.task](hand_landmarker.task): modelo de detección de manos.
+## Important files
 
-## Nota
+- [`main.py`](https://github.com/cleonaia/invisible_cam/blob/main/main.py): Main interface and camera workflow.
+- [`invisible.py`](https://github.com/cleonaia/invisible_cam/blob/main/invisible.py): Logic behind the invisible effect.
+- [`utils.py`](https://github.com/cleonaia/invisible_cam/blob/main/utils.py): Person detection and hand-state detection.
+- [`requirements.txt`](https://github.com/cleonaia/invisible_cam/blob/main/requirements.txt): Project dependencies.
+- [`efficientdet_lite0.tflite`](https://github.com/cleonaia/invisible_cam/blob/main/efficientdet_lite0.tflite): Person-detection model.
+- [`hand_landmarker.task`](https://github.com/cleonaia/invisible_cam/blob/main/hand_landmarker.task): Hand-detection model.
 
-La app guarda la imagen de fondo en `invisible.jpg` dentro de la carpeta del proyecto.
+## Note
 
-Si la cámara no responde, comprueba que no esté siendo usada por otra aplicación.
+The app saves the background image as `invisible.jpg` inside the project directory.
 
-## ⭐ Apoya el proyecto
+If the camera does not respond, check that it is not being used by another application.
 
-Si este proyecto te ha resultado útil, te ha servido para aprender o te ha gustado, dale una estrella ⭐ a este repositorio en GitHub.
+## ⭐ Support the project
 
-Tu estrella ayuda a que el proyecto llegue a más personas y me motiva a seguir mejorándolo!!
+If you found this project useful, if it helped you learn, or if you simply enjoyed it, please give this repository a star ⭐ on GitHub.
 
-¡Gracias por el apoyo! 🙌
+Your star helps the project reach more people and motivates me to keep improving it!
+
+Thank you for your support! 🙌
