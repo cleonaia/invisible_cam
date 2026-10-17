@@ -82,6 +82,16 @@ The app saves the background image as `invisible.jpg` inside the project directo
 
 If the camera does not respond, check that it is not being used by another application.
 
+
+## Open Source Recognition
+
+This project has been selected for consideration for the **XERJ Corpus Hub**, a public index of code implementations designed to help AI coding agents find and reuse real-world solutions.
+
+The "Add files via upload" implementation from this repository has been offered for inclusion under the repository's MIT license, with attribution to the original repository and contributor.
+
+- **XERJ:** [xerj-org/xerj](https://github.com/xerj-org/xerj)
+
+
 ## ⭐ Support the project
 
 If you found this project useful, if it helped you learn, or if you simply enjoyed it, please give this repository a star ⭐ on GitHub.
